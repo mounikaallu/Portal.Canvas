@@ -1,0 +1,188 @@
+/* Taskbar Styling */
+.taskbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e7ff; /* Light blue background */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.taskbar h1 {
+    font-size: 24px;
+    color: #3b4a6b; /* Darker blue color for text */
+    margin: 0;
+}
+
+.options-menu {
+    font-size: 20px;
+    color: #3b4a6b;
+    cursor: pointer;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 80px; /* Narrower sidebar for compact look */
+    height: 100vh;
+    position: fixed;
+    background-color: #003366; /* ODU color */
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+}
+
+.logo-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px; /* Adjusted for smaller sidebar */
+    margin-bottom: 10px;
+}
+
+.nav {
+    width: 100%;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px; /* Smaller font for compact look */
+    padding: 10px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link i {
+    font-size: 20px; /* Smaller icons */
+    margin-bottom: 5px;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: #004080; /* Slightly darker shade */
+    color: white;
+    text-decoration: none;
+}
+
+/* Adjust text and spacing for active and hover states */
+.nav-link.active, .nav-link:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 80px; 
+    padding: 20px;
+    width: calc(100% - 80px);
+    background-color: #f4f4f4;
+}
+
+/* Account Panel Styling */
+.account-panel {
+    position: fixed;
+    left: -360px;
+    top: 116px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: left 0.3s ease; 
+    z-index: -1;
+}
+
+.account-panel.visible {
+    left: 80px; 
+}
+
+
+.account-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.account-header h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.account-header h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.account-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.account-links li {
+    margin-bottom: 10px;
+}
+
+.account-links a {
+    color: #3b4a6b;
+    text-decoration: none;
+}
+
+.contrast-option {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contrast-btn {
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*profile styling*/
+.profile-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-view p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-section {
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#edit-profile-btn {
+    margin-top: 15px;
+}
+
+.alert {
+    margin-top: 15px;
+}

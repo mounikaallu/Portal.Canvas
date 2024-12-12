@@ -1,0 +1,306 @@
+/* Add Course Button Styling */
+#create-course-btn {
+    background-color: #003366;
+    color: #fff; 
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+#create-course-btn:hover {
+    background-color: #003366; 
+    transform: scale(1.05); 
+}
+
+#create-course-btn:active {
+    background-color: #002244; 
+    transform: scale(0.98); 
+}
+
+/*assigned teacher courses styling*/
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    width: 254px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+.course-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color:  #003366;
+}
+
+.course-card p {
+    color: #666;
+    font-size: 14px;
+    color:  #003366;
+}
+.no-courses {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.no-courses-img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.no-courses p {
+    font-size: 18px;
+    color: #555;
+}
+
+.course-logo{
+    width: 234px;
+}
+
+/*student register courses styling*/
+.register-courses-container {
+    margin: 20px 0;
+}
+
+.register-courses-container .form-group {
+    margin-bottom: 20px;
+}
+
+.available-courses .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    margin: 5px 0;
+}
+
+.course-card select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.course-card .btn-primary {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Registration Container */
+.registration-container {
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.heading {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Semester Selection */
+.semester-selection {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.semester-selection select {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.semester-selection .btn-primary {
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.semester-selection .btn-primary:hover {
+    background-color: #002244;
+    transform: scale(1.05);
+}
+
+/* Courses Table */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.courses-table th, .courses-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.courses-table th {
+    background-color: #003366;
+    color: white;
+    font-size: 1em;
+}
+
+.courses-table td {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.courses-table .btn-primary {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.courses-table .btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .registration-container {
+        padding: 15px;
+    }
+
+    .semester-selection select {
+        width: 100%;
+    }
+
+    .courses-table {
+        font-size: 0.85em;
+    }
+}
+
+#register-course-btn{
+    background-color: #003366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    width: 234px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-card h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+/* Registered Courses Styling (Student Dashboard) */
+.registered-courses-container .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.registered-courses-container .course-card {
+    width: 254px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+}
+
+.registered-courses-container .course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.registered-courses-container .course-card h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #003366;
+}
+
+.registered-courses-container .course-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}

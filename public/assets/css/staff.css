@@ -1,0 +1,227 @@
+/* Staff Container */
+.staff-container {
+    background-color: #f9f9f9; /* Light background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.staff-header h1 {
+    color: #003366; /* Blue for headings */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.staff-header p {
+    color: #555; /* Subtle grey for descriptions */
+    margin-bottom: 20px;
+}
+
+.staff-header button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.staff-header button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+/* Table Container */
+.staff-table-container {
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #003366;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #003366;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #003366;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light grey for striped rows */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* White for alternate rows */
+}
+
+table tbody tr:hover {
+    background-color: #e6f2ff; /* Light blue on hover */
+    cursor: pointer;
+}
+
+/* Actions Column */
+table td:last-child {
+    text-align: center;
+}
+
+button.btn-secondary {
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button.btn-secondary:hover {
+    background-color: #bbb;
+}
+/* Modal Overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff; /* White background */
+    padding: 20px 30px; /* Balanced padding */
+    border-radius: 10px; /* Smooth rounded corners */
+    width: 400px; /* Fixed width */
+    max-height: 90%; /* Prevents overflow on smaller screens */
+    overflow-y: auto; /* Scroll if content overflows */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Depth effect */
+    text-align: left; /* Align text to left */
+    position: relative; /* For positioning the close button */
+}
+
+/* Modal Header */
+.modal-content h3 {
+    font-size: 22px; /* Clear and bold title */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #003366; /* Blue heading */
+    text-align: center; /* Center-align title */
+}
+
+/* Form Elements */
+.modal-content form .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-content form label {
+    font-weight: bold;
+    color: #333; /* Darker text */
+    margin-bottom: 8px;
+    display: block;
+    font-size: 14px; /* Consistent font size */
+}
+
+.modal-content form input,
+.modal-content form select {
+    width: 100%; /* Full width */
+    padding: 10px; /* Comfortable input padding */
+    margin-top: 5px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Smooth input corners */
+    font-size: 14px;
+}
+
+.modal-content form input:focus,
+.modal-content form select:focus {
+    border-color: #003366; /* Blue focus border */
+    outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+.modal-content button {
+    margin: 10px 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.modal-content .btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-content .btn-success:hover {
+    background-color: #218838;
+}
+
+.modal-content .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal-content .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Close Button */
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    color: #555; /* Subtle close button */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-content .close-btn:hover {
+    color: #000; /* Darker on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%; /* Adjust modal width for smaller screens */
+        max-height: 80%; /* Reduce height on smaller screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .modal-content h3 {
+        font-size: 20px; /* Slightly smaller heading */
+    }
+}
+
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: none; /* Initially hidden */
+}
+.input-error {
+    border-color: red;
+}
+
